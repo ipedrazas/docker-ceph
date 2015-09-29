@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#
+# This script is designed to be run inside the container
+#
+
+ETCD="${ETCD:-127.0.0.1:4001}"
+
+# loop forever until the container is stopped
+while true; do
+  sleep 1
+done

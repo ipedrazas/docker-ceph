@@ -1,0 +1,9 @@
+FROM quay.io/UKHomeOffice/store-base
+
+ADD bin/rbd /bin/rbd
+ADD bin/run.sh /bin/run.sh
+RUN chmod +x /bin/rbd /bin/run.sh
+RUN rm /app/conf.d/admin_keyring.toml && \
+    rm /app/conf.d/mon_keyring.toml
+
+ENTRYPOINT [ "/bin/run.sh" ]
