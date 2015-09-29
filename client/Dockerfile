@@ -1,4 +1,4 @@
-FROM quay.io/UKHomeOffice/store-base
+FROM quay.io/ukhomeofficedigital/store-base
 
 ADD bin/rbd /bin/rbd
 ADD bin/run.sh /bin/run.sh

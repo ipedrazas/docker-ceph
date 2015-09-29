@@ -1,4 +1,4 @@
-FROM quay.io/UKHomeOffice/store-base
+FROM quay.io/ukhomeofficedigital/store-base
 
 EXPOSE 6789
 ENTRYPOINT ["/app/bin/boot"]
