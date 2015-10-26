@@ -1,5 +1,6 @@
-
 # Deis Store
+
+[![Build Status](https://travis-ci.org/UKHomeOffice/docker-ceph.svg?branch=master)](https://travis-ci.org/UKHomeOffice/docker-ceph)
 
 A backing store built on [Ceph](http://ceph.com) for use in the [Deis](http://deis.io) open
 source PaaS.

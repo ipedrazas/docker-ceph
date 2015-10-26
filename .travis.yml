@@ -1,0 +1,16 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker build -t quay.io/ukhomeofficedigital/store-base:latest base
+  - docker build monitor
+  - docker build metadata
+  - docker build manager
+  - docker build gateway
+  - docker build daemon
+  - docker build config
+  - docker build client
+  - docker build backup
+  - docker build admin
